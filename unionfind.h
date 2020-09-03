@@ -11,10 +11,9 @@ public:
             id[i] = i;
     };
     void unionFind(int p, int q) {
-        unsigned  static counter = 0;
-        id[p] = counter;
-        id[q] = counter;
-        counter++;
+        unsigned  temp = id[p];
+        id[p] = id[q];
+        id[q] = temp;
     };
     bool connected(int p, int q) {
         if (id[p] == id[q]) {

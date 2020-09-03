@@ -11,6 +11,6 @@ int main()
     u.unionFind(2, 4);
     u.unionFind(2, 3);
     u.unionFind(9,0);
-
+    u.unionFind(4, 6);
     return 0;
 }
